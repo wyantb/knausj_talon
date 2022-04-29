@@ -13,16 +13,12 @@ q search:
     insert("p")
 
 when left:
-    key(esc)
     key(ctrl-h)
 when right:
-    key(esc)
     key(ctrl-l)
 when up:
-    key(esc)
     key(ctrl-k)
 when down:
-    key(esc)
     key(ctrl-j)
 when focus:
     key(ctrl-a)
@@ -73,14 +69,6 @@ big loop:
     key(ctrl-l)
 big loop back:
     key(ctrl-a)
-    key(ctrl-h)
-big up:
-    key(ctrl-k)
-big down:
-    key(ctrl-j)
-big right:
-    key(ctrl-l)
-big left:
     key(ctrl-h)
 big new:
     key(ctrl-a)
@@ -145,6 +133,9 @@ nav word:
 nav big word:
     key(esc)
     insert("W")
+nav search older:
+    insert(":cold")
+    key(enter)
 nav search first:
     insert(":cfir")
     key(enter)
@@ -183,6 +174,8 @@ nav save all:
     key(esc)
     insert(":wa")
     key(enter)
+new erg:
+    insert(", ")
 
 search repeat:
     insert("n")
@@ -275,6 +268,8 @@ message logging:
     insert("ilog: ")
 message performance:
     insert("iperf: ")
+message build:
+    insert("ibuild: ")
 message save and quit:
     key(esc)
     insert(":x")
@@ -296,4 +291,15 @@ git pop stash:
     key(enter)
 git amend:
     insert("git ci --amend")
+    key(enter)
+git clean:
+    insert("git clean -i")
+git pop stash:
+    insert("git stash pop")
+    key(enter)
+git rebase current:
+    insert("git pull --rebase")
+    key(enter)
+git fix merge:
+    insert("git mt")
     key(enter)

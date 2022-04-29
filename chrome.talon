@@ -11,9 +11,9 @@ settings():
 tag(): browser
 
 # define some voice commands
-hello chrome: "hello world"
 switch tab: key(ctrl-tab)
 switch tab back: key(ctrl-shift-tab)
+restore tab: key(cmd-shift-t)
 go to google:
     key(cmd-t)
     insert("google.com")

@@ -12,7 +12,11 @@ penny:
     insert('!')
 spell:
     key(backspace)
+assignment:
+    insert(' = ')
 
+macro cue:
+    insert('queue')
 macro Philippe:
     insert('Felipe')
 macro bullion:
@@ -29,9 +33,13 @@ macro apps:
     key(cmd-space)
 macro to do:
     insert('TODO')
+macro query:
+    insert('Parse.Query')
 macro parents:
     insert('()')
     key(left)
+macro Jason:
+    insert('JSON')
 
 go to address:
     key(cmd-l)
