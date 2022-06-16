@@ -10,6 +10,9 @@ settings():
 # activate the global tag "browser"
 tag(): browser
 
+find it:
+    edit.find()
+
 # define some voice commands
 switch tab: key(ctrl-tab)
 switch tab back: key(ctrl-shift-tab)
