@@ -10,10 +10,10 @@ touch:
 	# Touch automatically ends left drags so this is for right drags specifically
 	user.mouse_drag_end()
 
-righty:
-	mouse_click(1)
-	# close the mouse grid if open
-	user.grid_close()
+#righty:
+#	mouse_click(1)
+#	# close the mouse grid if open
+#	user.grid_close()
 
 midclick: 
 	mouse_click(2)
@@ -33,12 +33,12 @@ midclick:
 	key("{modifiers}:up")
 	# close the mouse grid
 	user.grid_close()
-<user.modifiers> righty: 
-	key("{modifiers}:down")
-	mouse_click(1)
-	key("{modifiers}:up")
-	# close the mouse grid
-	user.grid_close()
+#<user.modifiers> righty: 
+#	key("{modifiers}:down")
+#	mouse_click(1)
+#	key("{modifiers}:up")
+#	# close the mouse grid
+#	user.grid_close()
 (dubclick | duke): 
 	mouse_click()
 	mouse_click()
@@ -54,10 +54,10 @@ left drag | drag:
 	user.mouse_drag(0)
 	# close the mouse grid
 	user.grid_close()
-right drag | righty drag:
-	user.mouse_drag(1)
-	# close the mouse grid
-	user.grid_close()
+#right drag | righty drag:
+#	user.mouse_drag(1)
+#	# close the mouse grid
+#	user.grid_close()
 end drag | drag end:
     user.mouse_drag_end()
 wheel down: user.mouse_scroll_down()

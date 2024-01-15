@@ -14,6 +14,8 @@ spell:
     key(backspace)
 assignment:
     insert(' = ')
+join it:
+    insert(', ')
 
 macro cue:
     insert('queue')
@@ -40,6 +42,9 @@ macro parents:
     key(left)
 macro Jason:
     insert('JSON')
+
+switch focus:
+    key(cmd-`)
 
 go to address:
     key(cmd-l)

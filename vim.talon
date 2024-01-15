@@ -9,8 +9,7 @@ stop:
 
 q search:
     key(esc)
-    key(space)
-    insert("p")
+    insert(" p")
 
 when left:
     key(ctrl-h)
@@ -70,9 +69,36 @@ big loop:
 big loop back:
     key(ctrl-a)
     key(ctrl-h)
+big jump one:
+    key(ctrl-a)
+    insert("1")
+big jump two:
+    key(ctrl-a)
+    insert("2")
+big jump three:
+    key(ctrl-a)
+    insert("3")
+big jump four:
+    key(ctrl-a)
+    insert("4")
+big jump five:
+    key(ctrl-a)
+    insert("5")
+big jump six:
+    key(ctrl-a)
+    insert("6")
+big jump seven:
+    key(ctrl-a)
+    insert("7")
+big switch:
+    key(ctrl-a)
+    key(ctrl-a)
 big new:
     key(ctrl-a)
     insert("c")
+big split hard:
+    key(ctrl-a)
+    insert("-")
 big split pipe:
     key(ctrl-a)
     insert("|")
@@ -83,7 +109,7 @@ big close:
     key(ctrl-a)
     insert("x")
 
-save:
+save it:
     key(esc)
     insert(":w")
     key(enter)
@@ -118,9 +144,12 @@ nav back pair:
 nav next pair:
     key(esc)
     insert("}")
-nav top:
+nav jump top:
     key(esc)
     insert("gg")
+nav jump bottom:
+    key(esc)
+    insert("G")
 nav bottom:
     key(esc)
     insert("G")
@@ -145,6 +174,12 @@ nav search back:
     insert("[q")
 nav search last:
     insert(":clas")
+    key(enter)
+nav search next file:
+    insert(":cnf")
+    key(enter)
+nav search back file:
+    insert(":cpf")
     key(enter)
 nav jump:
     key(esc)
@@ -229,25 +264,6 @@ change head:
     key(esc)
     insert("c^")
 
-spot clean patch:
-    git co -p
-spot commit:
-    git ci
-spot diff:
-    git diff -w
-spot add all:
-    git add .
-spot pull rebase:
-    git pull --rebase
-spot push:
-    git push
-spot status:
-    git status
-spot refresh:
-    git rb
-spot tree:
-    insert("tig")
-    key(enter)
 spot edit talon:
     insert("vim ~/.dotfiles/talon/vim.talon")
     key(enter)
@@ -278,17 +294,31 @@ message save and quit:
 yarn lent:
     insert("yarn lint")
     key(enter)
+yarn test:
+    insert("yarn test")
+    key(enter)
+yarn watch:
+    insert("yarn watch")
+    key(enter)
+make watch:
+    insert("make watch")
+    key(enter)
+make test:
+    insert("make test")
+    key(enter)
 
 git remote prone origin:
     insert("git rpo")
     key(enter)
+git push force:
+    insert("git push -f")
+    key(enter)
+git rebase interactive:
+    insert("git rebase -i ")
 git new push:
     insert("git push -u origin ")
 git remote delete:
     insert("git push origin :")
-git pop stash:
-    insert("git stash pop")
-    key(enter)
 git amend:
     insert("git ci --amend")
     key(enter)

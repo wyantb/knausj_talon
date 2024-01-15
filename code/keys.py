@@ -133,7 +133,7 @@ punctuation_words = {
     "`": "`",
     ",": ",",  # <== these things
     "back tick": "`",
-    "grave": "`",
+    #"grave": "`",
     "comma": ",",
     "period": ".",
     "full stop": ".",
@@ -153,7 +153,7 @@ punctuation_words = {
 
     # Currencies
     "dollar sign": "$",
-    "pound sign": "£",
+    #"pound sign": "£",
 }
 symbol_key_words = {
     "dot": ".",
